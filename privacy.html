@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - La Réserve Naturelle</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 20px; color: #333; line-height: 1.7; }
+        h1 { color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+        h2 { color: #444; margin-top: 30px; }
+        .company { font-weight: bold; color: #2e7d32; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <h1>Politique de confidentialité</h1>
+    <p><strong>Application :</strong> Claude Desktop MCP<br>
+    <strong>Éditeur :</strong> <span class="company">La Réserve Naturelle</span><br>
+    <strong>Dernière mise à jour :</strong> 12 février 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>Cette politique de confidentialité décrit comment l'application Claude Desktop MCP traite les données lorsqu'elle est connectée à QuickBooks Online via l'API Intuit.</p>
+
+    <h2>2. Données collectées</h2>
+    <p>L'application accède aux données comptables QuickBooks Online suivantes dans le cadre de son fonctionnement :</p>
+    <ul>
+        <li>Comptes et plan comptable</li>
+        <li>Factures et devis</li>
+        <li>Dépenses et achats</li>
+        <li>Clients et fournisseurs</li>
+        <li>Rapports financiers</li>
+    </ul>
+
+    <h2>3. Traitement des données</h2>
+    <p><strong>Toutes les données sont traitées localement</strong> sur l'appareil de l'utilisateur. L'application utilise le protocole MCP (Model Context Protocol) qui communique via stdin/stdout — aucune donnée n'est transmise sur le réseau au-delà de la connexion sécurisée à l'API Intuit.</p>
+
+    <h2>4. Stockage</h2>
+    <p>Les identifiants d'authentification (Client ID, Client Secret, Refresh Token) sont stockés dans un fichier <code>.env</code> local sur l'appareil de l'utilisateur. Aucune base de données externe n'est utilisée. Aucune donnée n'est stockée dans le cloud par cette application.</p>
+
+    <h2>5. Partage avec des tiers</h2>
+    <p><strong>Aucune donnée n'est partagée avec des tiers.</strong> L'application communique uniquement avec l'API QuickBooks Online d'Intuit via une connexion OAuth 2.0 sécurisée.</p>
+
+    <h2>6. Sécurité</h2>
+    <p>L'application met en œuvre les mesures de sécurité suivantes :</p>
+    <ul>
+        <li>Authentification OAuth 2.0 avec tokens à durée limitée</li>
+        <li>Stockage local exclusif des identifiants</li>
+        <li>Communication locale via le protocole MCP</li>
+        <li>Code source ouvert et auditable (licence MIT)</li>
+    </ul>
+
+    <h2>7. Vos droits</h2>
+    <p>Étant donné que cette application est utilisée exclusivement en interne par La Réserve Naturelle, les données traitées sont sous le contrôle direct de l'entreprise. Pour toute question ou demande de suppression de données, veuillez nous contacter.</p>
+
+    <h2>8. Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité :<br>
+    <span class="company">La Réserve Naturelle</span><br>
+    Site web : <a href="https://lareservenaturelle.com/fr/">lareservenaturelle.com</a></p>
+
+    <div class="footer">
+        &copy; 2026 La Réserve Naturelle. Tous droits réservés.
+    </div>
+</body>
+</html>
